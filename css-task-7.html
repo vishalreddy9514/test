@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-TASK-7</title>
+    <style>
+        .bg-container{
+            background-color: #a41d4f;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+
+        }
+        .form-container{
+            background-color: #58112a;
+            width: 70%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+           padding: 30px; 
+           display: flex;
+           justify-content: center;
+
+        }
+        .input-style{
+            margin: 10px;
+            padding: 5px;
+            width:180px;
+            margin-left:73px;
+        }
+        .input-password{
+            margin-left:50px; 
+        }
+        .input-phn{
+            margin-left:10px; 
+               }
+        .label-style{
+            color: #ffffff;
+            font-family:'Times New Roman';
+            font-style: normal;
+            font-size: 18px;
+            margin-left: 50px;
+            padding-left: 30px;
+        }
+        .gender-type{
+            color: #ffffff;
+
+        }
+        .gender-spacing{
+            margin-right: 65px;
+           
+        }
+        .register-button{
+            text-align: center
+
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-container">
+        <div class="form-container">
+               <div>
+                <label class="label-style">Name:</label>
+                <input type="text" placeholder="your name" class="input-style"/>
+                <br/>
+            
+                <label class="label-style">Email:</label>
+                <input type="email" placeholder="your email" class="input-style"/>
+                <br/>
+            
+                <label class="label-style">Password:</label>
+                <input type="password" class="input-style input-password"/>
+                <br/>
+                <label class="label-style">Phone Number:</label>
+                <input type="number" class="input-style input-phn"/> <br/><br/>
+
+            
+                <label class="label-style gender-spacing">Gender:</label>
+                
+                <span class="gender-type ">Male:</span>
+                <input type="radio" name="gender"/>
+                <span class="gender-type">Female:</span>
+                <input type="radio" name="gender"/>
+                <span class="gender-type">Other:</span>
+                <input type="radio" name="gender"/>
+                <br/> <br/>
+            
+                <label class="label-style">Language</label>
+                <select style="margin-left: 52px; padding: 5px; width: 140px;">
+                    <option>Select language</option>
+                    <option>English</option>
+                    <option>Telugu</option>
+                    <option>Hindi</option>
+                    <option>Tamil</option>
+                    <option>Kannada</option>
+                </select><br/><br/>
+            
+                <label class="label-style">Zip Code:</label>
+                <input type="number" style="margin-left: 50px; padding: 5px; width: 180px;"/><br/>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                <label class="label-style">About:</label>
+                <textarea cols="25" rows="3" placeholder="Write about yourself..." style="margin-left: 65px; margin-top: 20px;"></textarea>
+                </div>
+                <br/>
+                <br/>
+                <div class="register-button">
+                    <button style ="height: 45px; width: 350px; border-radius: 10px; margin-left: 80px; font-family: 'Arial'; font-size:20px; font-weight: bold;">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-task-2</title>
+</head>
+<style>
+    .vertical-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color:#76c9df;
+    }
+    
+    .list-anchor {
+      display: block;
+      color: blue;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    a.ex:hover {
+      background-color:orange;
+      color: white;
+    }
+    .box{
+        border: 2px black solid;
+        width: 200px;
+        height: 180px;
+        padding: 10px;
+    }
+    a.ex2:hover {
+      background-color:gray;
+      color:white
+      
+    }
+    
+    .box2{
+        border: 2px black solid;
+        width: 400px;
+        height: 50px;
+        padding: 10px;  
+    }
+    .h-u-list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:lightgray;
+    }
+    .h-list{
+        float: left;
+    }
+    .h-anchor{
+      display: block;
+      color: blue;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-right:1px blue solid;
+    }
+    </style>
+
+<body>
+    <div style="display: flex;">
+        <div>
+            <h1>Vertical Navigation Bar</h1>
+            <div class="box">
+                <ul class="vertical-list">
+                    <li ><a href="#Home" class="list-anchor ex">Home</a></li>
+                    <li ><a href="#Java" class="list-anchor ex">Java</a></li>
+                    <li ><a href="#CSS" class="list-anchor ex">CSS</a></li>
+                    <li ><a href="#HTML" class="list-anchor ex" >HTML</a></li>
+                    <li ><a href="#bootstrap" class="list-anchor ex">Bootstrap</a></li>
+                </ul>
+                </div>
+            </div>
+          <div style="margin-left: 20px; align-self: center;">
+            <h2>Horizontal Navigation Bar</h2>
+            <div class="box2">
+            
+            <ul class="h-u-list">
+                <li class="h-list"><a class="active h-anchor ex2" href="#home">Home</a></li>
+                <li class="h-list"><a class="h-anchor ex2" href="#Java">Java</a></li>
+                <li class="h-list"><a class="h-anchor ex2" href="#Html">HTML</a></li>
+                <li class="h-list"><a class="h-anchor ex2" href="#CSS">CSS</a></li>
+            </ul>
+            </div>
+          
+        </div>
+       
+        
+    </div>
+    
+</body>
+</html>
+
+
+
